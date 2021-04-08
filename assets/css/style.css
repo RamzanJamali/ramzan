@@ -117,39 +117,39 @@ img {
     font-size: 15px;
 }
 .btn-primary {
-    background: #41228e;
+    background: #222222 ;
     color: #fff;
 }
 .btn-primary:active {
-    background: #542cb7 !important;
+    background: #222222  !important;
 }
 .btn-primary:hover {
-    background: #542cb7;
+    background: #222222 ;
 }
 .btn-primary.focus,
 .btn-primary.active {
-    background: #542cb7 !important;
+    background: #222222  !important;
     box-shadow: none !important;
 }
 .btn-transparent {
     background: transparent;
-    color: #41228e;
+    color: #222222 ;
     font-weight: 700;
 }
 .btn-transparent:active,
 .btn-transparent:hover {
-    color: #41228e;
+    color: #222222 ;
 }
 body {
     background-color: #fff;
     overflow-x: hidden;
 }
 ::-moz-selection {
-    background: #542cb7;
+    background: #222222 ;
     color: #fff;
 }
 ::selection {
-    background: #542cb7;
+    background: #222222 ;
     color: #fff;
 }
 .preloader {
@@ -236,7 +236,7 @@ a:hover {
     background: #eaeaea !important;
 }
 .text-primary {
-    color: #41228e !important;
+    color: #1f1f1f !important;
 }
 .text-color {
     color: #4c4c4c;
@@ -362,7 +362,6 @@ textarea.form-control {
 .navigation {
     padding: 10px 100px;
     transition: 0.3s ease;
-    /* background-color: #41228e; */
 }
 .navigation.nav-bg {
     padding: 10px 130px;
@@ -424,8 +423,8 @@ textarea.form-control {
     left: -250px;
 }
 #l3 {
-    top: 200px;
-    left: 60%;
+    top: 10%;
+    left: 1%;
 }
 #l4 {
     top: 150px;
@@ -438,6 +437,8 @@ textarea.form-control {
 #l6 {
     bottom: -20px;
     left: 10%;
+    width:20%;
+    min-width: 200px;
 }
 #l7 {
     bottom: 100px;
@@ -449,6 +450,7 @@ textarea.form-control {
 }
 #l9 {
     right: 1%;
+    top:50%;
 }
 .layer-bg {
     position: absolute;
