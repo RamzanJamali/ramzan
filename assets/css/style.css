@@ -778,3 +778,8 @@ blockquote {
 .sec-about {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
+
+li {
+    color: black;
+    font-weight: 600;
+}
