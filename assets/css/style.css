@@ -230,7 +230,7 @@ a:hover {
     display: unset !important;
 }
 .bg-primary {
-    background: #41228e !important;
+    background: #1f1f1f !important;
 }
 .bg-gray {
     background: #eaeaea !important;
@@ -307,6 +307,10 @@ a:hover {
 .icon-light {
     color: #c8d5ef;
 }
+
+.icon-dark {
+    color: #1f1f1f;
+}
 .slick-dots {
     text-align: center;
     padding-left: 0;
@@ -332,11 +336,11 @@ a:hover {
 .form-control {
     border: 0;
     border-radius: 0;
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 2px solid !important;
     height: 60px;
 }
 .form-control:focus {
-    border-color: #41228e;
+    border-color: #000000;
     outline: 0;
     box-shadow: none !important;
 }
@@ -344,7 +348,7 @@ textarea.form-control {
     height: 120px;
 }
 .line-primary {
-    border-color: #41228e !important;
+    border-color: #757474 !important;
 }
 .card {
     border: 0;
@@ -358,10 +362,11 @@ textarea.form-control {
 .navigation {
     padding: 10px 100px;
     transition: 0.3s ease;
-    background-color: #41228e;
+    /* background-color: #41228e; */
 }
 .navigation.nav-bg {
     padding: 10px 130px;
+    background-color: #1f1f1f;
 }
 @media (max-width: 991px) {
     .navigation.nav-bg {
@@ -371,7 +376,7 @@ textarea.form-control {
 @media (max-width: 991px) {
     .navigation {
         padding: 20px;
-        background: #41228e;
+        background: #1f1f1f;
     }
 }
 .navbar .nav-item .nav-link {
@@ -428,7 +433,7 @@ textarea.form-control {
 }
 #l5 {
     top: -10%;
-    right: 45%;
+    right: 35%;
 }
 #l6 {
     bottom: -20px;
@@ -514,14 +519,14 @@ textarea.form-control {
     transition: 0.3s ease;
 }
 .hover-bg-primary:hover {
-    background: #41228e;
+    background: #1f1f1f;
 }
 .hover-bg-primary:hover * {
     color: #fff;
 }
 .active-bg-primary {
     transition: 0.3s ease;
-    background: #41228e;
+    background: #1f1f1f;
 }
 .active-bg-primary * {
     color: #fff;
@@ -640,10 +645,11 @@ textarea.form-control {
 blockquote {
     display: inline-block;
     padding: 10px 20px;
-    background: #eaeaea;
-    border-left: 2px solid #41228e;
+    background: #6b6b6b;
+    border-left: 4px solid #1f1f1f;
     font-style: italic;
     font-size: 22px;
+    color: white !important;
 }
 .content * {
     margin-bottom: 20px;
