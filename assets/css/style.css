@@ -230,7 +230,7 @@ a:hover {
     display: unset !important;
 }
 .bg-primary {
-    background: #1f1f1f !important;
+    background: #18263a !important;
 }
 .bg-gray {
     background: #eaeaea !important;
@@ -365,7 +365,7 @@ textarea.form-control {
 }
 .navigation.nav-bg {
     padding: 10px 130px;
-    background-color: #1f1f1f;
+    background-color: #18263a;
 }
 @media (max-width: 991px) {
     .navigation.nav-bg {
