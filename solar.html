@@ -81,13 +81,18 @@
                 <div class="col-12 text-center">
                     <h1 class="text-white font-tertiary">Electric Solar System Calculator</h1>
                 </div>
-                  <p class="col-md-auto">
-                This Energy Consumption Calculator is indicative only and its calculations may be different to the actual usage. This difference may be due to:
-                <br/>The number of people living in your home; or
-                <br/>The number, age and efficiency of appliances
-                <br/>The weather – depending on the day or the season, appliances such as Heat Pumps and clothes dryers are used more frequently
-            </p>
             </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div class="container">
+                <p class="alert alert-secondary border border-primary">
+                    This Energy Consumption Calculator is indicative only and its calculations may be different to the actual usage. This difference may be due to:
+                    <br/>The number of people living in your home; or
+                    <br/>The number, age and efficiency of appliances
+                    <br/>The weather – depending on the day or the season, appliances such as Heat Pumps and clothes dryers are used more frequently
+                </p>
         </div>
         <!-- background shapes -->
         <img src="./assets/images/illustrations/shape1.svg" alt="illustrations" class="bg-shape-1 w-100" />
@@ -334,6 +339,10 @@
                     <td class=' ' scope="col"><select class="form-control-sm col" id="oth3" oninput="doMath2('oth1', 'oth2', 'oth3', 'oth')" name='hours_range'><option value='0'>0</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option></select></td>
                     <td class=' ' scope="col"><input id="oth" value="0" class="input-group-text"/></td>
                 </tr>
+                <tr class="" scope="col">
+                    <td class=' ' colspan="5"><div class="text-center"><button class="btn btn-success" id="total" onclick="totalEnergy()" name="total">Calculate Total</button>
+                    </td></div>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -342,9 +351,7 @@
     <section class="section">
     <div class='container'>
         <div class='table-info alert-primary text-center'>1 Unit= 1000Wh=1kWh</div>
-        <div class="">
-            <div class="text-center"><button class="btn btn-success" id="total" onclick="totalEnergy()" name="total">Calculate Total</button></div>
-        </div>
+        <br/>
         <table class='table table-striped table-dark table-hover'>
 
             <tr class="">
