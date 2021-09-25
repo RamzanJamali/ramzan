@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ramzanjamali.ml/sitemap.xml
+Sitemap: https://ramzanjamali.github.io/ramzan//sitemap.xml
