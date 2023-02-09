@@ -1,2 +1,2 @@
-# energypro
-energypro, ramzan's blog site
+# Ramzan Jamali Portfolio
+ramzan's portfolio
