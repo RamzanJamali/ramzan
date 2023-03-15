@@ -56,7 +56,7 @@
 <body id="home">
   <header class="navigation fixed-top bg-primary">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand font-tertiary h4" href="https://ramzanjamali.github.io/ramzan/index.html"><img src="ramzan/assets/images/raman.webp"
+        <a class="navbar-brand font-tertiary h4" href="https://ramzanjamali.github.io/ramzan/index.html"><img src="/ramzan/assets/images/raman.webp"
                 class="rounded-circle mr-2 mb-2" alt="Muhammad Ramzan front facing" width="40" height="40" />Ramzan
             Jamali</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,7 +83,7 @@
   <!-- /page title -->
 
   <section class="section">
-    <div class="container" style="margin-top: 100px !important;">
+    <div class="container" style="margin-top: 70px !important;">
       <div class="row">
         <div class="col-lg-12">
           <h3 class="font-tertiary mb-5">Serialize and Deserialize ML Model</h3>
@@ -93,6 +93,11 @@
               style="min-width: 50% !important;max-width: 840px im !important;"
               >
 
+            <p class="post-text text-grey text-justify">
+                Serializing an object means converting its state into a byte stream or another format that can be stored or transmitted. 
+                Deserialization, on the other hand, involves converting the serialized data back into an object with the same state as the original.    
+            </p>
+            
             <strong class="text-justify">
               Using Joblib to Serialize and Deserialize a machine learning model
             </strong>
@@ -106,7 +111,7 @@
                1. Saving an object:
             </strong>
 
-            <blockquote class="post-text text-grey">import joblib<br/>
+            <blockquote class="post-text text-grey bg-dark">import joblib<br/>
                 <br/>
                 # create an object<br/>
                 my_object = {"name": "John", "age": 30}<br/>
@@ -120,7 +125,7 @@
               2. Loading an object:
             </strong>
 
-            <blockquote class="post-text text-grey">
+            <blockquote class="post-text text-grey bg-dark">
                 import joblib <br/>
                 <br/>
                 # load the serialized object from a file <br/>
@@ -143,7 +148,7 @@
                 For example, to save a trained scikit-learn model, you can use the following code:
             </p>
 
-            <blockquote class="post-text text-grey">
+            <blockquote class="post-text text-grey bg-dark">
                 import joblib <br/>
                 from sklearn.linear_model import LogisticRegression <br/>
                 <br/>
@@ -164,7 +169,7 @@
                 To load the saved scikit-learn model from a file, you can use the following code:
             </p>
 
-            <blockquote class="post-text text-grey">
+            <blockquote class="post-text text-grey bg-dark">
                 import joblib <br/>
                 <br/>
                 # load the serialized model from a file <br/>
