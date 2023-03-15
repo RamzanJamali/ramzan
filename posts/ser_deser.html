@@ -89,101 +89,101 @@
           <h3 class="font-tertiary mb-5">Serialize and Deserialize ML Model</h3>
           <div class="content">
             <img src="../assets/images/blog/thumbnail/ser_01.webp" alt="post-thumb"
-              class="img-fluid rounded float-left mr-5 col-lg-4 col-sm-6"
+              class="img-fluid rounded float-right mr-5 col-lg-4 col-sm-6"
               style="min-width: 50% !important;max-width: 840px im !important;"
               >
 
-            <strong>
+            <strong class="text-justify">
               Using Joblib to Serialize and Deserialize a machine learning model
             </strong>
 
-            <p class="post-text text-grey">
+            <p class="post-text text-grey text-justify">
                 You can use the joblib module to serialize and deserialize Python objects, including scikit-learn models. 
                 Here's an example of how to do it:
             </p>
 
-            <blockquote>
+            <strong>
                1. Saving an object:
+            </strong>
+
+            <blockquote class="post-text text-grey">import joblib<br/>
+                <br/>
+                # create an object<br/>
+                my_object = {"name": "John", "age": 30}<br/>
+                <br/>
+                # serialize the object and save it to a file<br/>
+                joblib.dump(my_object, "my_object.joblib")<br/>
+                
             </blockquote>
 
-            <p class="post-text text-grey">import joblib
-
-                # create an object
-                my_object = {"name": "John", "age": 30}
-                
-                # serialize the object and save it to a file
-                joblib.dump(my_object, "my_object.joblib")
-                
-            </p>
-
-            <blockquote>
+            <strong>
               2. Loading an object:
-            </blockquote>
+            </strong>
 
-            <p class="post-text text-grey">
-                import joblib
-
-                # load the serialized object from a file
-                my_object = joblib.load("my_object.joblib")
-
-                # print the loaded object
+            <blockquote class="post-text text-grey">
+                import joblib <br/>
+                <br/>
+                # load the serialized object from a file <br/>
+                my_object = joblib.load("my_object.joblib") <br/>
+                <br/>
+                # print the loaded object <br/>
                 print(my_object)
 
-            </p>
+            </blockquote>
 
-            <p class="post-text text-grey">
+            <p class="post-text text-grey text-justify">
                 In this example, we first create a Python dictionary object named my_object. 
                 We then serialize the object using the joblib.dump() method and save it to a file named my_object.joblib. 
                 To load the serialized object, we use the joblib.load() method and pass in the filename. 
                 The loaded object is stored in the my_object variable, and we can print it to verify that the deserialization was successful.
             </p>
 
-            <p class="post-text text-grey">
+            <p class="post-text text-grey text-justify">
                 Similarly, you can use the joblib module to serialize and deserialize scikit-learn models. 
                 For example, to save a trained scikit-learn model, you can use the following code:
             </p>
 
-            <p class="post-text text-grey">
-                import joblib
-                from sklearn.linear_model import LogisticRegression
+            <blockquote class="post-text text-grey">
+                import joblib <br/>
+                from sklearn.linear_model import LogisticRegression <br/>
+                <br/>
+                # create a scikit-learn model object <br/>
+                clf = LogisticRegression() <br/>
 
-                # create a scikit-learn model object
-                clf = LogisticRegression()
+                # train the model on some data <br/>
+                X = [[1, 2], [3, 4]] <br/>
+                y = [0, 1] <br/>
+                clf.fit(X, y) <br/>
+                <br/>
+                # serialize the model and save it to a file <br/>
+                joblib.dump(clf, "my_model.joblib") <br/>
 
-                # train the model on some data
-                X = [[1, 2], [3, 4]]
-                y = [0, 1]
-                clf.fit(X, y)
+            </blockquote>
 
-                # serialize the model and save it to a file
-                joblib.dump(clf, "my_model.joblib")
-
-            </p>
-
-            <p class="post-text text-grey">
+            <p class="post-text text-grey text-justify">
                 To load the saved scikit-learn model from a file, you can use the following code:
             </p>
 
-            <p class="post-text text-grey">
-                import joblib
+            <blockquote class="post-text text-grey">
+                import joblib <br/>
+                <br/>
+                # load the serialized model from a file <br/>
+                clf = joblib.load("my_model.joblib") <br/>
+                <br/>
+                # use the loaded model to make predictions on new data <br/>
+                X_test = [[5, 6], [7, 8]] <br/>
+                y_pred = clf.predict(X_test) <br/>
+                <br/>
+                # print the predictions <br/>
+                print(y_pred) <br/>
 
-                # load the serialized model from a file
-                clf = joblib.load("my_model.joblib")
+            </blockquote>
 
-                # use the loaded model to make predictions on new data
-                X_test = [[5, 6], [7, 8]]
-                y_pred = clf.predict(X_test)
-
-                # print the predictions
-                print(y_pred)
-
-            </p>
-
-            <p class="post-text text-grey">
+            <p class="post-text text-grey text-justify">
                 In this example, we first create a scikit-learn logistic regression model object named clf.
-                 We then train the model on some data and serialize it using the joblib.dump() method. 
-                 To load the saved model, we use the joblib.load() method and pass in the filename.
-                  The loaded model is stored in the clf variable, and we can use it to make predictions on new data.
+                We then train the model on some data and serialize it using the joblib.dump() method. 
+                To load the saved model, we use the joblib.load() method and pass in the filename.
+                The loaded model is stored in the clf variable, and we can use it to make predictions on new data.
             </p>
 
 
