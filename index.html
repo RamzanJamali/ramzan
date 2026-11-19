@@ -1,452 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <title>Ramzan Jamali | Data Scientist</title>
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9R10QREEWP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramzan Jamali — Automation and AI Engineer based in Freiburg im Breisgau. M.Sc. Electrical & Information Engineering specializing in Applied AI, Web Automation, and Embedded Systems." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3ERJ%3C/text%3E%3C/svg%3E" />
+    <meta property="og:title" content="Ramzan Jamali | Automation & AI Engineer" />
+    <meta property="og:description" content="Automation and AI Engineer — Applied AI, Web Automation & Embedded Systems. Freiburg im Breisgau." />
+    <meta property="og:type" content="website" />
+    <title>Ramzan Jamali | Automation & AI Engineer</title>
 
-  gtag('config', 'G-9R10QREEWP');
-</script>
-    
-    <meta name="title" content="Ramzan Jamali | Data Scientist">
-    <meta name="description" content="This is a personal website of Muhammad Ramzan Jamali, who is a Data Scientist. Message him to know more about him.">
-    <meta name="keywords" content="Ramzan Jamali, Data Scientist, Freelancer, Data Engineer, Python Programmer, Tutor, Designer, Data Analyst">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="Keywords" content="[KEYWORDS]" />
-    <meta property="og:title" content="Muhammad Ramzan Jamali home page" />
-    <meta property="og:description" content="[ABOUT PARAGRAPH]" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <!-- bootstrap-icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-
-    <!-- Main Stylesheet -->
-    <link href="./assets/css/style.css" rel="stylesheet" />
-
-    <!--Favicon-->
-    <link rel="icon" type="image/webp" href="./assets/images/raman.webp" />
-
-    <!-- Google Analytics-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Analytics Link Goes Here -->
-
-    <!-- Google AdSense -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#top" class="logo">
+                <span class="logo-mark">RJ</span>
+                <span>Ramzan Jamali</span>
+            </a>
 
-<body id="home">
-    <header class="navigation fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand font-tertiary h4" href="index.html"><img src="./assets/images/raman.webp"
-                    class="rounded-circle mr-2 mb-2" alt="Muhammad Ramzan front facing" width="40" height="40" />Ramzan
-                Jamali</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="navbar-toggler-icon"></i>
-            </button>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
 
-            <div class="collapse navbar-collapse text-center" id="navigation">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <!-- Language Toggle -->
+            <div class="lang-toggle" role="group" aria-label="Language selection">
+                <button id="lang-en" class="lang-btn active" aria-label="English">EN</button>
+                <span>/</span>
+                <button id="lang-de" class="lang-btn" aria-label="Deutsch">DE</button>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!-- hero area -->
-    <section class="hero-area bg-primary" id="parallax">
-        <div class="container hero-con">
-            <div class="row">
-                <div class="col-lg-11 mx-auto mb-5">
-                    <h1 class="text-white font-tertiary">
-                        Hi! I’m <br />
-                        Ramzan
-                    </h1>
-                    <p class="hero-line text-white">
-                        Data Scientist | Software Developer
-                    </p>
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="eyebrow reveal">
+                    <span class="dot"></span>
+                    <span data-i18n="hero.eyebrow">Open to opportunities</span>
+                </p>
+                <h1 class="reveal" data-i18n="hero.title">Automation and AI Engineer</h1>
+                <p class="subtitle reveal" data-i18n="hero.subtitle">M.Sc. Electrical &amp; Information Engineering specializing in Applied AI, Web Automation, and Embedded Systems.</p>
+
+                <div class="cta-buttons reveal">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Get in Touch</a>
+                    <a href="https://github.com/RamzanJamali" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.445 2.297 6.358 5.467 7.556a.546.546 0 0 1-.447-.488A10.68 10.68 0 0 1 0 8c0-4.937 4.02-9 9-9 2.23 0 4.25.884 5.77 2.33A10.68 10.68 0 0 1 16 8c0 3.445-2.297 6.358-5.467 7.556a.546.546 0 0 1 .447-.488A10.68 10.68 0 0 1 16 8c0-4.937-4.02-9-9-9z"/></svg>
+                        GitHub
+                    </a>
                 </div>
+
+                <p class="location reveal">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span data-i18n="hero.location">Freiburg im Breisgau</span>
+                </p>
+            </div>
+
+            <div class="hero-image reveal">
+                <div class="photo-ring">
+                    <img src="profile.avif" alt="Ramzan Jamali" class="profile-photo">
+                </div>
+                <span class="float-badge badge-1">AI &amp; LLMs</span>
+                <span class="float-badge badge-2">Embedded C++</span>
+                <span class="float-badge badge-3">Web Automation</span>
             </div>
         </div>
-        <div class="layer-bg w-100">
-            <img class="img-fluid shapes" src="./assets/images/illustrations/shape1.svg" alt="bg-shape" />
-        </div>
-        <div class="layer" id="l3">
-            <img src="./assets/images/illustrations/shape2.svg" alt="bg-shape" width="200" height="200" />
-        </div>
-        <div class="layer" id="l6">
-            <img src="./assets/images/illustrations/shape3.svg" alt="bg-shape" class="shape3"/>
-        </div>
-        <div class="layer" id="l9">
-            <img src="./assets/images/illustrations/shape4.svg" alt="bg-shape" class="shape4"/>
-        </div>
-        <!-- social icon -->
-        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-            <li class="mb-3">
-                <a class="text-white" href="https://www.linkedin.com/in/ramzan-jamali-0bb94945/"
-                    alt="linkedin profile"><i class="bi bi-linkedin" alt="instagram icon"></i>
-                    LinkedIn
-                </a>
-            </li>
-            <li class="mb-3">
-                <a class="text-white" href="https://github.com/RamzanJamali" alt="github profile"><i class="bi bi-github"
-                        alt="dribbble icon"></i>
-                    Github
-                </a>
-            </li>
-            
-        </ul>
-        <!-- /social icon -->
     </section>
-    <!-- /hero area -->
 
-    <!-- about -->
-    <section class="section" id="about">
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="section-title mb-2">About</h3>
-                    </div>
-                    <p class="font-secondary text-justify paragraph-lg text-dark sec-about">
-                        Professional with over two years of invaluable hands-on experience managing a variety of creative projects. 
-                        My goal is to utilize my expertise in data science, machine learning, ETL automation, and testing in the digital environment.
-                    </p>
+            <h2 class="section-title reveal"><span data-i18n="about.title">About Me</span></h2>
+
+            <p class="lead reveal" data-i18n="about.lead">Analytical and execution-driven engineer bridging hardware, embedded software, and web development with specialized expertise in AI automation.</p>
+
+            <div class="about-grid">
+                <div class="card about-card reveal">
+                    <span class="card-icon icon-ai" aria-hidden="true">🤖</span>
+                    <h3 data-i18n="about.card1_title">Technical Depth</h3>
+                    <p data-i18n="about.card1_text">Full-stack system development from embedded firmware to web dashboards, with proven expertise in real-time control systems and precision engineering.</p>
+                </div>
+
+                <div class="card about-card reveal">
+                    <span class="card-icon icon-data" aria-hidden="true">⚡</span>
+                    <h3 data-i18n="about.card2_title">AI &amp; Automation</h3>
+                    <p data-i18n="about.card2_text">Hands-on experience with local LLMs, AI-assisted coding workflows, machine learning model training and evaluation on industrial datasets.</p>
+                </div>
+
+                <div class="card about-card reveal">
+                    <span class="card-icon icon-lead" aria-hidden="true">🎯</span>
+                    <h3 data-i18n="about.card3_title">Leadership</h3>
+                    <p data-i18n="about.card3_text">Led research teams, mentored interns, conducted 30+ technical interviews, and delivered structured execution with clear communication.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /about -->
 
-    <!-- skills -->
-    <section class="section">
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-title">Skills</h3>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 mx-auto mwid-350">
-                    <div class="card shadow text-center">
-                        <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-                            <div class="wave" data-progress="92%"></div>
+            <h2 class="section-title reveal"><span data-i18n="experience.title">Experience</span></h2>
+
+            <div class="timeline">
+                <!-- Master Thesis -->
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="card timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp.thesis_title">Master's Thesis — Medical System Validation</h3>
+                                <span class="company" data-i18n="exp.thesis_company">Medical Center University Freiburg</span>
+                            </div>
+                            <span class="date-pill">May – Oct 2025</span>
                         </div>
-                        <div class="card-footer bg-primary">
-                            <h4 class="card-title text-white h5">Machine Learning <br> (95%)</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 mx-auto mwid-350">
-                    <div class="card shadow text-center">
-                        <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-                            <div class="wave" data-progress="90%"></div>
-                        </div>
-                        <div class="card-footer bg-primary">
-                            <h4 class="card-title text-white h5">Web Automation <br>(97%)</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 mx-auto mwid-350">
-                    <div class="card shadow text-center">
-                        <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-                            <div class="wave" data-progress="85%"></div>
-                        </div>
-                        <div class="card-footer bg-primary">
-                            <h4 class="card-title text-white h5">QA Testing <br> (92%)</h4>
+                        <p class="description" data-i18n="exp.thesis_desc">Developed a pressure-controlled perfusion system for biomechanical characterization of corneal tissue. Built full-stack hardware/software integration with C++ real-time firmware maintaining precision control (±2.72 mmHg accuracy) and Python dashboard for live monitoring of 200,000+ data points per experiment.</p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Embedded Systems</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Real-time Control</span>
+                            <span class="tag">Medical Devices</span>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- Research Intern -->
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="card timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp.intern_title">Research &amp; Data Analysis Intern (Remote)</h3>
+                                <span class="company" data-i18n="exp.intern_company">SponsorYou</span>
+                            </div>
+                            <span class="date-pill">Apr – Jul 2022</span>
+                        </div>
+                        <p class="description" data-i18n="exp.intern_desc">Developed automated web scraping programs using Python/Selenium for financial, educational, and statistical data collection. Led a team of research interns including technical mentoring and conducted 30+ interviews to build the Data Engineering Internship Program.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Web Scraping</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Team Leadership</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Frontend Developer -->
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="card timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp.frontend_title">Frontend Developer</h3>
+                                <span class="company" data-i18n="exp.frontend_company">Effordea</span>
+                            </div>
+                            <span class="date-pill">Aug 2021 – Jan 2022</span>
+                        </div>
+                        <p class="description" data-i18n="exp.frontend_desc">Conceptualized, developed, and deployed modern websites and landing pages following mobile-first principles. Evaluated UX/UI designs for technical feasibility, performance optimization, and scalability.</p>
+                        <div class="tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">UX/UI</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
-    <!-- /skills -->
 
-    <!-- education -->
-    <section class="section position-relative">
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-title">Education</h3>
+            <h2 class="section-title reveal"><span data-i18n="skills.title">Skills</span></h2>
+
+            <div class="skills-grid">
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-ai" aria-hidden="true">🧠</span>
+                    <h3 data-i18n="skills.ai_title">AI &amp; Machine Learning</h3>
+                    <p data-i18n="skills.ai_text">Local LLMs (LM Studio), AI-assisted coding workflows, neural network fundamentals, model training &amp; evaluation (F1-Score, Overfitting/Underfitting analysis)</p>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-80">
-                    <div class="d-flex">
-                        <div class="mr-lg-5 mr-3">
-                            <i class="bi bi-book-half icon icon-dark icon-bg bg-light shadow rounded-circle d-block fsize-50"></i>
-                        </div>
-                        <div>
-                            <p class="text-dark mb-1">2020</p>
-                            <h4>
-                                 B.E Electrical Engineering <br>
-                                <small class="text-dark">Graduated</small>
-                            </h4>
-                            <p class="mb-0 text-dark">
-                                Quaid-e-Awam University of Science & Technology
-                            </p>
-                        </div>
-                    </div>
+
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-data" aria-hidden="true">📊</span>
+                    <h3 data-i18n="skills.data_title">Data Analysis &amp; Automation</h3>
+                    <p data-i18n="skills.data_text">Python, Web Scraping &amp; Browser Automation (Selenium), Data Processing &amp; KPI Analysis (Pandas), Python SQL API, Live Dashboards &amp; Visualization</p>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-80">
-                    <div class="d-flex">
-                        <div class="mr-lg-5 mr-3">
-                            <i class="bi bi-book-half icon icon-dark icon-bg bg-light shadow rounded-circle d-block fsize-50"></i>
-                        </div>
-                        <div>
-                            <p class="text-dark mb-1">2021</p>
-                            <h4>
-                                Data Science <br>
-                                <small class="text-dark">Specialization</small>
-                            </h4>
-                            <p class="mb-0 text-dark">
-                               Udemy 
-                            </p>
-                        </div>
-                    </div>
+
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-web" aria-hidden="true">🌐</span>
+                    <h3 data-i18n="skills.web_title">Web Development</h3>
+                    <p data-i18n="skills.web_text">Landing Page Development, Responsive Web Design (Mobile-First), Frontend Development, Performance &amp; Structure Optimization, Git</p>
+                </div>
+
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-chip" aria-hidden="true">⚙️</span>
+                    <h3 data-i18n="skills.embedded_title">Embedded Systems</h3>
+                    <p data-i18n="skills.embedded_text">Embedded C/C++, Firmware Development, Real-time Control, Microcontrollers (STM32, AVR, ARM Core, Arduino, Raspberry Pi), Unit Testing</p>
+                </div>
+
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-hw" aria-hidden="true">🔬</span>
+                    <h3 data-i18n="skills.hardware_title">Hardware &amp; CAD</h3>
+                    <p data-i18n="skills.hardware_text">PCB Design (KiCAD), Analog/Digital Electronics, LTSpice, Sensors &amp; Actuators, Measurement &amp; Control Technology, Siemens TIA Portal (PLC), MATLAB, Fusion 360 CAD/CAM</p>
+                </div>
+
+                <div class="card skill-card reveal">
+                    <span class="card-icon icon-lead" aria-hidden="true">✅</span>
+                    <h3 data-i18n="skills.qa_title">Quality Assurance &amp; Leadership</h3>
+                    <p data-i18n="skills.qa_text">System Validation, Test Protocols, Technical Documentation &amp; Reporting, Team Leadership &amp; Mentoring, Recruitment &amp; Candidate Selection</p>
                 </div>
             </div>
         </div>
-        <!-- bg image -->
-        <img class="img-fluid edu-bg-image w-100" src="./assets/images/backgrounds/education-bg.webp" alt="bg-image" />
     </section>
-    <!-- /education -->
 
-    <!-- services were here -->
-
-    <!-- About -->
-    <section class="section bg-primary position-relative testimonial-bg-shapes">
+    <!-- Education Section -->
+    <section id="education" class="section education">
         <div class="container">
-            <div class="row">
-                <!-- services -->
-                <section class="section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h3 class="section-title text-white">
-                                    Services
-                                </h3>
-                            </div>
-                            <div class="col-md-3 mb-4 mb-md-0">
-                                <div class="card bg-light">
-                                    <div class="card-body text-center px-4 py-5">
-                                        <i class="bi bi-cpu icon mb-5 d-inline-block text-dark"></i>
-                                        <h4 class="mb-4">
-                                            AI & ML Modelling
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-4 mb-md-0">
-                                <div class="card">
-                                    <div class="card-body text-center px-4 py-5">
-                                        <i class="bi bi-gear icon mb-5 d-inline-block text-dark"></i>
-                                        <h4 class="mb-4">
-                                            IT Automation
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-4 mb-md-0">
-                                <div class="card">
-                                    <div class="card-body text-center px-4 py-5">
-                                        <i class="bi bi-graph-up icon mb-5 d-inline-block text-dark"></i>
-                                        <h4 class="mb-4">
-                                            Data Analysis
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-4 mb-md-0">
-                                <div class="card">
-                                    <div class="card-body text-center px-4 py-5">
-                                        <i class="bi bi-window-sidebar icon mb-5 d-inline-block text-dark"></i>
-                                        <h4 class="mb-4">
-                                            QA Testing
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </section>
-                <!-- /services -->
+            <h2 class="section-title reveal"><span data-i18n="education.title">Education</span></h2>
+
+            <div class="education-grid">
+                <div class="card edu-card reveal">
+                    <span class="degree-badge">M.Sc.</span>
+                    <h3>Electrical &amp; Information Engineering</h3>
+                    <p class="institution">Technische Hochschule Deggendorf, Germany</p>
+                    <p class="date-pill">Oct 2023 – Oct 2025</p>
+                    <p class="focus" data-i18n="education.msc_focus">Focus: Control &amp; Sensor Technology, Advanced Automation &amp; Programming, Simulation, PLC (TIA Portal), Cyber-Physical Systems</p>
+                </div>
+
+                <div class="card edu-card reveal">
+                    <span class="degree-badge">B.Eng.</span>
+                    <h3>Electrical Engineering</h3>
+                    <p class="institution">Quaid-e-Awam University of Engineering Sciences &amp; Technology, Pakistan</p>
+                    <p class="date-pill">2016 – 2020</p>
+                    <p class="focus" data-i18n="education.bsc_focus">Focus: Power Electronics, Measurement &amp; Control Technology, Sensor Technology, Microcontrollers</p>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="languages reveal">
+                <h3 data-i18n="education.languages_title">Languages</h3>
+                <div class="language-tags">
+                    <span class="lang-tag" data-i18n="education.lang_english">English (Fluent)</span>
+                    <span class="lang-tag" data-i18n="education.lang_german">German (B1 / Work-related)</span>
+                    <span class="lang-tag" data-i18n="education.lang_urdu">Urdu (Native)</span>
+                    <span class="lang-tag" data-i18n="education.lang_sindhi">Sindhi (Native)</span>
+                </div>
             </div>
         </div>
-        <!-- bg shapes -->
-        <img src="./assets/images/backgrounds/map.png" alt="map" class="img-fluid bg-map" />
-        <img src="./assets/images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1" />
-        <img src="./assets/images/illustrations/shape5.svg" alt="bg-shape" class="bg-shape-2 shape5-1"/>
-        <img src="./assets/images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3" />
-        <img src="./assets/images/illustrations/shape3.svg" alt="bg-shape" class="bg-shape-5 shape3-1"/>
     </section>
-    <!-- /about -->
 
-    <!-- blog -->
-    <section class="section" id="blog">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3 class="section-title">Blog Posts</h3>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 mx-auto">
-                    <article class="card bg-dark">
-                        <img class="rounded card-img-top" src="./assets/images/blog/thumbnail/reg_brake.webp"
-                            alt="post-thumb" />
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="text-white" href="./posts/reg_brake.html">The Regenerative Brake</a>
-                            </h4>
-                            <p class="cars-text text-white">02-10-2021</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 mx-auto">
-                    <article class="card bg-dark">
-                        <img class="rounded card-img-top" src="./assets/images/blog/thumbnail/ser_01.webp"
-                            alt="post-thumb" height = "180px"/>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="text-white" href="./posts/ser_deser.html">
-                                    Serialize ML Models</a>
-                            </h4>
-                            <p class="cars-text text-white">15-Mar-2023</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 mx-auto">
-                    <article class="card bg-dark">
-                        <img class="rounded card-img-top" src="./assets/images/blog/thumbnail/javascript.webp"
-                            alt="post-thumb" />
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="text-white" href="#coming_soon">Intro To Javascript ES6</a>
-                            </h4>
-                            <p class="cars-text text-white">coming soon!</p>
-                        </div>
-                    </article>
+            <div class="contact-inner reveal">
+                <h2 class="section-title"><span data-i18n="contact.title">Contact</span></h2>
+                <p class="lead center" data-i18n="contact.lead">Let's connect and discuss how I can contribute to your project.</p>
+
+                <div class="contact-grid">
+                    <a id="email-link" href="#" class="contact-card">
+                        <span class="icon-circle icon-mail" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+                        </span>
+                        <h3>Email</h3>
+                        <p id="email-display"></p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/ramzanjamali" target="_blank" rel="noopener" class="contact-card">
+                        <span class="icon-circle icon-linkedin" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3v9zm-1.5-10.75h-.007A1.25 1.25 0 0 1 5.25 7a1.25 1.25 0 0 1 1.254-1.25 1.25 1.25 0 0 1 1.253 1.25 1.25 1.25 0 0 1-1.253 1.25H6.5zM14.75 19h-3v-9h3v9zm-1.5-10.75h-.008A1.25 1.25 0 0 1 11.998 7a1.25 1.25 0 0 1 1.253-1.25A1.25 1.25 0 0 1 14.5 7a1.25 1.25 0 0 1-1.253 1.25h-.008z"/></svg>
+                        </span>
+                        <h3 data-i18n="contact.linkedin">LinkedIn</h3>
+                        <p>linkedin.com/in/ramzanjamali</p>
+                    </a>
+
+                    <a href="https://github.com/RamzanJamali" target="_blank" rel="noopener" class="contact-card">
+                        <span class="icon-circle icon-github" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.445 2.297 6.358 5.467 7.556a.546.546 0 0 1-.447-.488A10.68 10.68 0 0 1 0 8c0-4.937 4.02-9 9-9 2.23 0 4.25.884 5.77 2.33A10.68 10.68 0 0 1 16 8c0 3.445-2.297 6.358-5.467 7.556a.546.546 0 0 1 .447-.488A10.68 10.68 0 0 1 16 8c0-4.937-4.02-9-9-9z"/></svg>
+                        </span>
+                        <h3>GitHub</h3>
+                        <p>github.com/RamzanJamali</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /blog -->
 
-    <!-- contact -->
-    <section class="section section-on-footer" data-background="./assets/images/backgrounds/bg-dots.png" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto p-0">
-                    <div class="bg-white rounded text-center p-4 shadow-down contact-1">
-                        <div class="col-12 text-center">
-                            <h3 class="section-title mb-3">Contact</h3>
-                            <hr class="mt-0 mb-5" />
-                        </div>
-                        <form class="gform row" style="display: block" method="POST"
-                            data-email="mubashirjamali09@gmail.com"
-                            action="https://script.google.com/macros/s/AKfycbw6DLJgTPVSuwj165EQRo4i5FKd-EuT88YAX5Z86w/exec"
-                            id="form">
-                            <div class="col-md-6">
-                                <input type="text" id="name" name="name" placeholder="Full Name"
-                                    class="form-control border-bottom bg-light line-primary pl-3 mb-4" required/>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" id="email" name="email" placeholder="Email Address"
-                                    class="form-control border-bottom bg-light line-primary pl-3 mb-4" required/>
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" id="message"
-                                    class="form-control border-bottom bg-light line-primary p-3 mb-4"
-                                    placeholder="Message" required></textarea>
-                            </div>
-                            <div class="col-lg-12 col-12 mx-auto">
-                                <button class="btn btn-primary" type="submit">
-                                    SEND
-                                </button>
-                            </div>
-                            <span class="email-invalid" style="display: none">
-                                Must be a valid email address</span>
-                        </form>
-                        <div style="display: none" id="success-msg">
-                            <div class="col-12 mt-5">
-                                <p class="text-dark h5 text-center">
-                                    Message Sent!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /contact -->
-
-    <!-- footer -->
-    <footer class="bg-primary footer-section">
-        <div class="section footer-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="text-dark-light h5">Email</p>
-                        <p class="text-white fw-lighter">
-                            ramzanjamali@hotmail.com
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="text-dark-light h5">Address</p>
-                        <p class="text-white fw-lighter">
-                            Karachi, Pakistan
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="text-center pt-5 pb-3">
-            <p class="mb-0 text-white h5">
-                Copyright ©
-                <span id="year" class="text-white"></span>
-                Muhammad Ramzan Jamali
-            </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Ramzan Jamali. All rights reserved.</p>
+            <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
         </div>
     </footer>
-    <!-- /footer -->
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-    </script>
-    <!-- form scripts -->
-    <script src="./assets/js/form.js"></script>
-
-    <!-- Main Script -->
-    <script src="./assets/js/script.js"></script>
-    <script>
-        var CurrentYear = new Date().getFullYear();
-        var yearLabel = (document.getElementById(
-            "year"
-        ).innerText = CurrentYear);
-    </script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
